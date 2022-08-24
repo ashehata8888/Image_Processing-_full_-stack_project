@@ -1,0 +1,49 @@
+{
+  "name": "img_process",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "dev": "ts-node src/index.ts",
+    "start": "nodemon --watch './**/*.ts' --exec ts-node ./src/index.ts",
+    "start:prod": "npm run build && node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint --fix",
+    "prettier-format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jasmine": "^4.0.3",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.0.6",
+    "@types/sharp": "^0.30.4",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jasmine": "^4.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "nodemon": "^2.0.19",
+    "prettier": "2.7.1",
+    "supertest": "^3.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "fs-extra": "^10.1.0",
+    "morgan": "^1.10.0",
+    "sharp": "^0.30.7"
+  }
+}
