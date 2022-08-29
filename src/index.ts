@@ -24,7 +24,7 @@ const app: Application = express();
 app.use(routes);
 
 // app.use(supertest);
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
   res.json({
